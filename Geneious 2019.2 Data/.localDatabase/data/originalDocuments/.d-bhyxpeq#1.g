@@ -1,0 +1,25 @@
+<XMLSerialisableRootElement cachedCountGC="457" cachedCountAT="245" charSequenceRevision="1" annotationsRevision="1" charSequenceValidated="true">
+  <created type="date">1580312102097</created>
+  <name>CpxR</name>
+  <description>A new nucleotide sequence entered manually</description>
+  <sequenceAnnotations>
+    <annotation>
+      <description>GTAAANNNNNNGTAA</description>
+      <type>Editing History Replacement</type>
+      <intervals>
+        <interval>
+          <minimumIndex>1</minimumIndex>
+          <maximumIndex>701</maximumIndex>
+          <direction>none</direction>
+        </interval>
+      </intervals>
+      <qualifiers>
+        <qualifier>
+          <name>Original Bases</name>
+          <value>GTAAANNNNNNGTAA</value>
+        </qualifier>
+      </qualifiers>
+    </annotation>
+  </sequenceAnnotations>
+  <charSequence>ATGATCCCTGTGCTGCTGGTCGACGACGACCGCGAACTGACTGAAATGCTCTCTTTGTACCTGGCGCGCGAAGGCTTCCAGGCAACGGCCGCGGACACGGGTGAGGAAGGCGAGACCCTGGCGTTGTCCGGCCATTTCCAGGTGGTGGTGCTGGACGTGATGTTGCCAGGCATCTCCGGTATCGAGGTGCTGCGCCGCGTGCGTGCACGTAGTCAGGTGCCGGTGCTGCTGCTGACAGCACGCGGTGACAACATCGACCGCATTGCCGGCCTGGAGCTGGGGGCCGATGACTATGTGCCCAAGCCCAGCTCTCCCGGTGAGCTGGTGGCACGCCTGCGGGCAATACTGCGTCGCGTGCAGCCATACCTGATGGGTGAAACCAGCGCGCCCGAGGTACCTGAACAGGTACGCAGTGGCGCATTGAAAATGTGGCCGGGGCGGCGCGAGGCGCGCTGGGGCGCAGCCACGCTGGAATTGACCGGCTCCGAGTTCAGCCTGCTCGAAGCCCTGGCGCGCCAGGCCGGTCAGCTGGTCAGCAAGCAGGACCTGTCGCTCAATGCCCTGGGCCGGCCGCTGACCCGTTATGACCGACGCATCGACGTGCACGTCAGCAGCATCCGGCAAAAACTTGGCCCGCGTGCCGATGGCAGCAGCTGGATCCAGAGCGTGCGCGGCATGGGCTACATGCTGATCGTCGAATGA</charSequence>
+</XMLSerialisableRootElement>

@@ -1,0 +1,1 @@
+<panel viewer="Contig View" geneiousVersion="2019.2.1" />

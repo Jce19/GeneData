@@ -1,0 +1,746 @@
+<searchableFields>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Any Field</name>
+      <description>Search in every available field</description>
+      <code>ALL</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>%GC Primer Bind</name>
+      <description>Percent GC content of the binding region of a primer</description>
+      <code>percentGc</code>
+      <type>com.biomatters.geneious.publicapi.implementations.Percentage</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Common Name</name>
+      <description>The common name of the organism</description>
+      <code>commonName</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Original Location</name>
+      <description>The folder from which this document was deleted</description>
+      <code>originalLocation</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Bin</name>
+      <description>Each chromatogram or alignment is assigned to a low, medium or high quality bin based on its properties as specified in preferences.</description>
+      <code>bin</code>
+      <type>java.lang.String</type>
+      <enumerationOptions>
+        <value>Low</value>
+        <value>Medium</value>
+        <value>High</value>
+      </enumerationOptions>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Sequence Length</name>
+      <description>Residue length of the sequence</description>
+      <code>sequence_length</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>PDB name</name>
+      <description>Name in PDB</description>
+      <code>PDBname</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Paired Data Type</name>
+      <description>Sequencing platform read pairing technology that produced this data</description>
+      <code>pairedDataType</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+      <enumerationOptions>
+        <value>Unpaired</value>
+        <value>Paired End</value>
+        <value>Mate Pair</value>
+        <value>High Quality Mate Pair</value>
+        <value>Lucigen NxSeq Mate Pair</value>
+      </enumerationOptions>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Min Sequence Length</name>
+      <description>The minimum length of non-reference sequences in a sequence list or alignment</description>
+      <code>minimumSequenceLength</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Created</name>
+      <description>The date this document was originally created</description>
+      <code>cache_created</code>
+      <type>java.util.Date</type>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Document type</name>
+      <description>Geneious document type</description>
+      <code>documentclass</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <enumerationOptions>
+        <value>3D structure</value>
+        <value>Alias</value>
+        <value>Alignment</value>
+        <value>Amino Acid Sequence</value>
+        <value>Article</value>
+        <value>BLAST nucleotide hit</value>
+        <value>BLAST protein hit</value>
+        <value>Chromatogram</value>
+        <value>Cloud summary</value>
+        <value>Codon Usage Table</value>
+        <value>Contig</value>
+        <value>Discontinued Gene Summary</value>
+        <value>Image</value>
+        <value>NCBI Summary</value>
+        <value>Nucleotide Sequence</value>
+        <value>Nucleotide Sequence List</value>
+        <value>Oligonucleotide (Primer/Probe)</value>
+        <value>PDF Document</value>
+        <value>Pfam Clan</value>
+        <value>Pfam Domain</value>
+        <value>Pfam Domain Sequence</value>
+        <value>Protein Sequence List</value>
+        <value>Publication</value>
+        <value>Restriction Enzyme Collection</value>
+        <value>Sequence</value>
+        <value>Sequence list</value>
+        <value>Taxonomy</value>
+        <value>Text Document</value>
+        <value>Tree</value>
+        <value>Tutorial</value>
+      </enumerationOptions>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Taxonomy</name>
+      <description>The taxonomy of the document as a semicolon separated list</description>
+      <code>taxonomy</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Ref Seq Index</name>
+      <description>The index of the reference sequence in a contig or -1 if there is no reference sequence</description>
+      <code>referenceSequenceIndex</code>
+      <type>java.lang.Integer</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Annotation Type</name>
+      <description>Search for annotations which match the query Type</description>
+      <code>sequenceAnnotationType</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <version_introduced>11.1.0</version_introduced>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Approx. Consensus Length</name>
+      <description>The length of the consensus sequence in a contig. The value is approximated and may be out by a few bases due to gaps.</description>
+      <code>consensusSequenceLength</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Is Forward Read</name>
+      <description>Whether this read is in the forward direction</description>
+      <code>isForwardRead</code>
+      <type>java.lang.Boolean</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Name</name>
+      <description>document name</description>
+      <code>cache_name</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>% Identical Sites</name>
+      <description>The percentage of columns in the alignment for which all sequence are identical</description>
+      <code>percentage_identical</code>
+      <type>com.biomatters.geneious.publicapi.implementations.Percentage</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>MQ%</name>
+      <description>The percentage of untrimmed bases in a sequence that are medium quality</description>
+      <code>mediumQualityPercent</code>
+      <type>com.biomatters.geneious.publicapi.implementations.Percentage</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Ref Seq Name</name>
+      <description>The name of the reference sequence in a contig or alignment</description>
+      <code>referenceSequenceName</code>
+      <type>java.lang.String</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>%GC</name>
+      <description>The percentage of A, C, G, T, U, S, W nucleotides (excluding reference sequence) that are either G, C, or S</description>
+      <code>gcPercent</code>
+      <type>com.biomatters.geneious.publicapi.implementations.Percentage</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Ambiguities</name>
+      <description>The number of untrimmed ambiguous bases in a chromatogram</description>
+      <code>abiguities</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Height</name>
+      <description>Tree Height</description>
+      <code>height</code>
+      <type>java.lang.Double</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Max Sequence Length</name>
+      <description>The maximum length of non-reference sequences in a sequence list or alignment</description>
+      <code>maximumSequenceLength</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Alignment score</name>
+      <description>The score of the alignment</description>
+      <code>alignment_score</code>
+      <type>java.lang.Double</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>strain</name>
+      <description>strain from which sequence was obtained</description>
+      <code>strain</code>
+      <type>java.lang.String</type>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>db_xref</name>
+      <description>database cross-reference: pointer to related information in  another database.</description>
+      <code>db_xref</code>
+      <type>java.lang.String</type>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Replicon type</name>
+      <description>Replicon type</description>
+      <code>vNTREPLTYPE</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Primer-Dimer</name>
+      <description>Temperature below which the oligo will bind to another copy of itself</description>
+      <code>primerDimer</code>
+      <type>java.lang.Double</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Size</name>
+      <description>Size of the document in bytes</description>
+      <code>document_size</code>
+      <type>com.biomatters.utilities.LongDisplayedAsBytes</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Organism</name>
+      <description>The organism of the document</description>
+      <code>organism</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name># Sequences</name>
+      <description>The number of sequences in an alignment or set of sequences</description>
+      <code>number_of_sequences</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Topology</name>
+      <description>The topology of the sequence (either linear or circular)</description>
+      <code>topology</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+      <enumerationOptions>
+        <value>linear</value>
+        <value>circular</value>
+      </enumerationOptions>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name># Nucleotide Sequences With Mates</name>
+      <description>The number of nucleotide sequences in an alignment or set of sequences that are paired with another sequence</description>
+      <code>nucleotideSequenceWithMatesCount</code>
+      <type>java.lang.Integer</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Read Technology</name>
+      <description>Sequencing platform that produced this data</description>
+      <code>dataType</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+      <enumerationOptions>
+        <value>Illumina</value>
+        <value>Ion Torrent</value>
+        <value>PacBio CLR</value>
+        <value>PacBio CCS</value>
+        <value>Oxford Nanopore</value>
+        <value>Sanger</value>
+        <value>454</value>
+        <value>Solid</value>
+      </enumerationOptions>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Genetic Code</name>
+      <description>The Genetic code of this sequence</description>
+      <code>geneticCode</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+      <enumerationOptions>
+        <value>Standard</value>
+        <value>Amber Readthrough</value>
+        <value>Vertebrate Mitochondrial</value>
+        <value>Yeast Mitochondrial</value>
+        <value>Mold Protozoan Mitochondrial</value>
+        <value>Mycoplasma</value>
+        <value>Invertebrate Mitochondrial</value>
+        <value>Ciliate</value>
+        <value>Echinoderm Mitochondrial</value>
+        <value>Euplotid Nuclear</value>
+        <value>Bacterial</value>
+        <value>Alternative Yeast</value>
+        <value>Ascidian Mitochondrial</value>
+        <value>Flatworm Mitochondrial</value>
+        <value>Blepharisma Nuclear</value>
+        <value>Chlorophycean Mitochondrial</value>
+        <value>Trematode Mitochondrial</value>
+        <value>Scenedesmus Obliquus Mitochondrial</value>
+        <value>Thraustochytrium Mitochondrial</value>
+        <value>Pterobranchia Mitochondrial</value>
+        <value>Candidate Division SR1 and Gracilibacteria</value>
+      </enumerationOptions>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name># Nucleotides</name>
+      <description>The total number of nucleotides, summed across all sequences in a sequence list</description>
+      <code>nucleotidesCount</code>
+      <type>java.lang.Long</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Other Aliases</name>
+      <description>Other Names that this gene is known by</description>
+      <code>OtherAliases</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>LQ%</name>
+      <description>The percentage of untrimmed bases in a sequence (or the consensus of a contig) that are low quality</description>
+      <code>lowQualityPercent</code>
+      <type>com.biomatters.geneious.publicapi.implementations.Percentage</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Taxa ID</name>
+      <description>The Identification number of the Taxa</description>
+      <code>TaxID</code>
+      <type>java.lang.String</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Modified</name>
+      <description>The date this document was last modified</description>
+      <code>modified_date</code>
+      <type>java.util.Date</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>% Pairwise Identity</name>
+      <description>The percentage of pairwise residues that are identical in the alignment, including gap versus non-gap residues, but excluding gap versus gap residues.</description>
+      <code>percentage_similarity</code>
+      <type>com.biomatters.geneious.publicapi.implementations.Percentage</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Alignment options</name>
+      <description>The options used to create the alignment</description>
+      <code>alignment_options</code>
+      <type>java.lang.String</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Mean Coverage</name>
+      <description>Mean number of sequences covering a column in the assembly</description>
+      <code>meanCoverage</code>
+      <type>java.lang.Double</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Genetic Source</name>
+      <description>The Source of the Genetic material</description>
+      <code>GeneticSource</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>First Residues</name>
+      <description>Sequence Residues</description>
+      <code>sequence_residues</code>
+      <type>java.lang.String</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>GID</name>
+      <description>The genbank ID of the sequence</description>
+      <code>gid</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Alignment method</name>
+      <description>The Alignment method used to create this document</description>
+      <code>Alignment_method</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>U</name>
+      <description>Whether or not this document has been read</description>
+      <code>unread</code>
+      <type>java.lang.Boolean</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Post-Trim</name>
+      <description>The length of a chromatogram after trimming</description>
+      <code>postTrimLength</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name># Indel Disagreements</name>
+      <description>The number of columns in which one or more sequences disagree and at least one is a gap</description>
+      <code>indelDisagreements</code>
+      <type>java.lang.Integer</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>URN</name>
+      <description>Unique identifier for each document</description>
+      <code>display_urn</code>
+      <type>java.lang.String</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Description</name>
+      <description>A brief description of this document</description>
+      <code>description</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Accession</name>
+      <description>Accession of document in original data source</description>
+      <code>accession</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Content</name>
+      <description>text contents of a document</description>
+      <code>content</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Oligo Type</name>
+      <description>The type of oligonulceotide, one of: Primer and Probe</description>
+      <code>oligoType</code>
+      <type>java.lang.String</type>
+      <enumerationOptions>
+        <value>Primer</value>
+        <value>Probe</value>
+      </enumerationOptions>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Annotations</name>
+      <description>&lt;html&gt;Search all text associated with annotations &amp;ndash; name, type, properties&lt;/html&gt;</description>
+      <code>sequenceAnnotations</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Annotation Name</name>
+      <description>Search for annotations which match the query Name</description>
+      <code>sequenceAnnotationName</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <version_introduced>11.1.0</version_introduced>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Extra-chromosome replication</name>
+      <description>Extra-chromosome replication</description>
+      <code>vNTEXTCHREPL</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Failed Binning Fields</name>
+      <description>A list of the fields which caused this sequence to fail to meet the requirements of a higher bin</description>
+      <code>BinFailReason</code>
+      <type>java.lang.String</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Free end gaps</name>
+      <description>Whether this alignment has free end gaps</description>
+      <code>freeEndGaps</code>
+      <type>java.lang.Boolean</type>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>No. tips</name>
+      <description>Number of tips</description>
+      <code>ntips</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Ref Seq Length</name>
+      <description>The length of the reference sequence in a contig</description>
+      <code>referenceSequenceLength</code>
+      <type>java.lang.Integer</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>HQ%</name>
+      <description>The percentage of untrimmed bases in a sequence (or the consensus of a contig) that are high quality</description>
+      <code>highQualityPercent</code>
+      <type>com.biomatters.geneious.publicapi.implementations.Percentage</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Filename (Imported From)</name>
+      <description></description>
+      <code>importedFrom.filename</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>sub_strain</name>
+      <description>name or identifier of a genetically or otherwise modified  strain from which sequence was obtained, derived from a parental strain (which should be annotated in the /strain qualifier).sub_strain from which sequence was obtained</description>
+      <code>sub_strain</code>
+      <type>java.lang.String</type>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Tm</name>
+      <description>Melting point of the oligonucleotide (in degrees celcius)</description>
+      <code>meltingPoint</code>
+      <type>java.lang.Double</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Molecule Type</name>
+      <description>The molecule type of the sequence</description>
+      <code>molType</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>No. nodes</name>
+      <description>Number of Nodes</description>
+      <code>nnodes</code>
+      <type>java.lang.Integer</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Tree builder</name>
+      <description>The Tree builder used to create this document</description>
+      <code>Tree_builder</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Trim Parameters</name>
+      <description>Trim parameters</description>
+      <code>trimParams.trimParams</code>
+      <type>java.lang.String</type>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Hairpin</name>
+      <description>Temperature below which the oligo will form a hairpin</description>
+      <code>hairpin</code>
+      <type>java.lang.Double</type>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name>Path (Imported From)</name>
+      <description></description>
+      <code>importedFrom.path</code>
+      <type>java.lang.String</type>
+      <defaultVisible>true</defaultVisible>
+      <isEditable>true</isEditable>
+    </DocumentField>
+  </field>
+  <field class="com.biomatters.geneious.publicapi.documents.DocumentField">
+    <DocumentField>
+      <name># Disagreements</name>
+      <description>The number of columns in which one or more sequences disagree</description>
+      <code>disagreements</code>
+      <type>java.lang.Integer</type>
+    </DocumentField>
+  </field>
+</searchableFields>

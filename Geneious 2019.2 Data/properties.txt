@@ -1,0 +1,65 @@
+#January 28 14:11:31 NZDT 2018
+16S_WEBSERVICE_HELPTEXT=<html><b>This is a cloud service for analysis of bacterial diversity in environmental samples.</b><br><br><b>How does it work?</b> We upload your data securely to our servers and analyze it using <a href="http://www.ncbi.nlm.nih.gov/pubmed/17586664">RDP</a><br>to produce a graph of bacterial diversity in your browser.<br><br><b>How much does it cost?</b> It's free, but you have to have a valid Geneious license to use it.<br><br><b>What data does it work with?</b> Full length 16S rRNA sequences will give the best results, but any<br>sub-region of 16S may be used. It assumes you have already pre-processed your data by:<br>\u2022 Barcode splitting (Use Sequence -> Separate Reads by Barcode)<br>\u2022 Primer trimming (Use Annotate & Predict -> Trim Ends)<br>\u2022 Low quality trimming (Use Annotate & Predict -> Trim Ends)<br>\u2022 Merging paired reads (Use Sequence -> Merge Paired Reads (in R9) or the <a href=\"https://www.geneious.com/plugins/flash\">FLASH plugin</a>)<br>\u2022 Removing reads shorter than 50 bp (Use Tools -> Workflows -> Filter)<br>\u2022 Chimera removal<div align=\"right\"> <a href="https\://16s.geneious.com/16s/results/fc069f33-ec1d-4991-ae96-ccbadbc7b851.html">Demo Results</a> | <a href="https://16s.geneious.com/16s/help.html">Help</a> | <a href="https\://www.geneious.com/webapps-terms-of-service">Terms of Service</a> | <a href="https\://www.geneious.com/webapps-privacy-policy">Privacy Policy</a></div><p style="background-color:rgb(211,222,237);border: 2px solid rgb(148,177,217);padding:3px;text-align:center;">16S Biodiversity Tool currently uses <b>RDP Tools version 2.12</b> (as of 21 November 2016)</p></html>
+16S_WEBSERVICE_LOCATION=https\://16s.geneious.com
+16S_WEBSERVICE_MAXIMUM_FILE_SIZE=1073741824
+16S_WEBSERVICE_MAXIMUM_SEQUENCE_COUNT=5000000
+16S_WEBSERVICE_MAXIMUM_SEQUENCE_LENGTH=10000
+CHAT_SERVICE=conference.talk.geneious.com
+CLOUD_PASSWORD_HELP=https://support.geneious.com/hc/en-us/articles/360000269271
+DEFAULT_BLAST_LOCATION2=https\://blast.ncbi.nlm.nih.gov/
+DEFAULT_BLAST_LOCATION=https\://www.ncbi.nlm.nih.gov/blast/
+BROADCAST_END-OF-32BIT_TITLE=Notice for Future Upgrades
+BROADCAST_END-OF-32BIT_BODY=<html><body><b>This computer will not be able to run Geneious Prime 2020 onwards.</b><br><br>The next major release of Geneious Prime (scheduled for release late 2019) will no longer run on 32-bit Windows operating systems such as yours. If you are unable to upgrade to a 64-bit operating system, you can continue using Geneious Prime 2019.<br><br>For more information, please refer to <a href="https://support.geneious.com/hc/en-us/articles/360031055611-Windows-Users-Geneious-Prime-2020-and-above-will-not-support-32-bit-Windows">Geneious Prime 2020 will be 32-bit only</a>.</body></html>
+BROADCAST_END-OF-32BIT_SHOWAGAIN=Don't show again
+BROADCAST_END-OF-32BIT_SYSTEM=WIN
+BROADCAST_END-OF-32BIT_ARCH=32
+EXTRA_PLUGINS_MESSAGE=<html><div style="text-align:right">More plugins at <a href="https://desktop-links.geneious.com/plugins">geneious.com</a></div></html>
+FAQ=https\://desktop-links.geneious.com/web/geneious/faq
+FEATURE_COMPARISON=https\://desktop-links.geneious.com/web/geneious/faq
+GENEIOUS_ACCOUNT_LOGIN_DESCRIPTION=Select this option if you have a Geneious Account
+GENEIOUS_ACCOUNT_LOGIN_STRING=Log in to Geneious Account
+HTML_MANUAL=https\://assets.geneious.com/manual
+INSTALLERS=https\://desktop-links.geneious.com/installers/geneious/
+JABBER_HOST=talk.geneious.com
+JAVA6_DETAILS=https://desktop-links.geneious.com/web/geneious/java-6
+KNOWN_NCBI_BLAST_LOCATIONS=http\://blast.ncbi.nlm.nih.gov/ https\://blast.ncbi.nlm.nih.gov/ http\://www.ncbi.nlm.nih.gov/blast/
+LICENSE_AGREEMENT=https\://desktop-links.geneious.com/web/geneious/licence-agreement
+MANUAL=https\://desktop-links.geneious.com/assets/documentation/geneious/GeneiousPrimeManual.pdf
+MAX_DESEQ2_VERSION=1.14.1
+NCBI_ERRORS_TO_IGNORE=can't retrieve ids from blob
+NCBI_EUTILS_LOCATION=https\://eutils.ncbi.nlm.nih.gov/
+NCBI_LOCATION=https\://www.ncbi.nlm.nih.gov/
+NCBI_TAXID_2_WGS_MAPPER=https\://www.ncbi.nlm.nih.gov/blast/BDB2EZ/taxid2wgs.cgi?INCLUDE_TAXIDS=
+PFAM_DOMAIN=ftp.sanger.ac.uk
+PFAM_PATH=pub/databases/Pfam//releases/Pfam23.0
+PLUGINS=https\://desktop-links.geneious.com/plugins
+PLUGIN_DEVELOPMENT=https\://desktop-links.geneious.com/plugin-development
+PRIVACY=https\://desktop-links.geneious.com/web/geneious/legal-policies#privacy
+PUBLIC_API=https\://desktop-links.geneious.com/web/geneious/plugin-writing
+PUBLIC_API_JAVADOC=https\://desktop-links.geneious.com/assets/developer/geneious/javadoc/
+QUICKSTART=https\://desktop-links.geneious.com/assets/documentation/geneious/Quickstart
+QUICKSTART_VIDEO=https\://youtu.be/dFMDqEYNsFE
+REBASE_METHYLATION=http\://rebase.neb.com/rebase/msbuffmore.txt
+REBASE_MSBUFFMIN=https\://assets.geneious.com/resources/msbuffmore.out
+REBASE_PROTO=http\://rebase.neb.com/rebase/link_proto
+REBASE_WITHREFM=http\://rebase.neb.com/rebase/link_withrefm
+RELEASE_NOTES=https\://desktop-links.geneious.com/assets/documentation/geneious/release_notes.html
+SEQUENCE_CLASSIFIER_MANUAL=https://desktop-links.geneious.com/assets/documentation/geneious/Sequence_Classifier_Manual.pdf
+STORE=https\://desktop-links.geneious.com/store
+STRICT_GENBANK_FORMAT=https://support.geneious.com/hc/en-us/articles/360007219452-Geneious-vs-GenBank-Nomenclature-and-exporting-of-Geneious-Prime-files-in-GenBank-format
+TALKBACK=https\://talkback.geneious.com\:443/talkback/submit
+TUTORIALS=https\://desktop-links.geneious.com/web/geneious/tutorials
+UNIPROT_LOCATION=http\://www.ebi.ac.uk/Tools/dbfetch/dbfetch?db=uniprot&id=
+UNIPROT_LOCATION_SUFFIX=&style=raw
+UNIPROT_QUERY=https://www.uniprot.org/uniprot/?query=%s&sort=score&format=list
+USER_FORUM=https\://support.geneious.com
+WEBAPPS_PRIVACY_POLICY=https\://assets.geneious.com/WebApplicationsPrivacyPolicy-Sep14.html
+WEBAPPS_TERMS_OF_SERVICE=https\://assets.geneious.com/WebApplicationsTermsOfService-Sep14.html
+WEBSITE=https\://www.geneious.com
+WEBSITE_ACADEMIC_DOWNLOAD_URL=https://www.geneious.com/academic/resources/download/
+WEBSITE_ACADEMIC_PURCHASE_URL=https://www.geneious.com/academic/pricing/non-commercial/
+WEBSITE_ACADEMIC_WHATS_NEW_URL=https://www.geneious.com/academic/features/whats-new/
+WEBSITE_COMMERCIAL_DOWNLOAD_URL=https://www.geneious.com/commercial/resources/download/
+WEBSITE_COMMERCIAL_PURCHASE_URL=https://www.geneious.com/commercial/quote/
+WEBSITE_COMMERCIAL_WHATS_NEW_URL=https://www.geneious.com/commercial/features/whats-new/
+WEBSITE_STUDENT_PURCHASE_URL=https://www.geneious.com/academic/pricing/student/
